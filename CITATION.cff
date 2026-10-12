@@ -5,6 +5,7 @@ authors:
   - family-names: Almohanna
     given-names: Salam Mohammed Ghazi
     affiliation: "School of Software, Faculty of Electronic and Information Engineering, Xi'an Jiaotong University"
+    orcid: "https://orcid.org/0000-0002-6409-8874"
 license: MIT
 version: 1.0.0
 keywords:
@@ -21,6 +22,7 @@ preferred-citation:
     - family-names: Almohanna
       given-names: Salam Mohammed Ghazi
       affiliation: "School of Software, Faculty of Electronic and Information Engineering, Xi'an Jiaotong University"
+      orcid: "https://orcid.org/0000-0002-6409-8874"
   year: 2026
   month: 10
   doi: 10.5281/zenodo.23318433

@@ -2,7 +2,7 @@
 
 **An independent evaluation of BudgetThinker-1.5B on 100 MATH-500 problems**
 
-**Salam Mohammed Ghazi Almohanna**<br>
+**Salam Mohammed Ghazi Almohanna** ([ORCID 0000-0002-6409-8874](https://orcid.org/0000-0002-6409-8874))<br>
 School of Software, Faculty of Electronic and Information Engineering, Xi'an Jiaotong University<br>
 Department of Computer Engineering Technologies, Imam Al-Kadhim University College
 
