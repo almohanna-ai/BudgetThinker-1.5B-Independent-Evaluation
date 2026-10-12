@@ -116,7 +116,7 @@ BudgetThinker paper:
 ## AI assistance
 
 The evaluation code, the execution on Google Colab, the statistical analysis and the drafting of the report were
-carried out with substantial assistance from Claude (Anthropic), an AI assistant, under the direction of the author,
+carried out with substantial assistance from an AI assistant, under the direction of the author,
 who set the scope, approved the experimental settings and compute use, and takes responsibility for the content.
 
 ## License
