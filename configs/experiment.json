@@ -1,0 +1,59 @@
+{
+  "study": "Independent evaluation of BudgetThinker-1.5B (RQ1-RQ4)",
+  "model": {
+    "id": "Xin-Rui/BudgetThinker-1.5b",
+    "revision": "b7304c41480eca765e2f77b5a6641133c64c1ea7",
+    "tokenizer_id": "Xin-Rui/BudgetThinker-1.5b",
+    "tokenizer_revision": "b7304c41480eca765e2f77b5a6641133c64c1ea7",
+    "safetensors_sha256": "11441b12d464440d1823825826d7c5b3799ee31e7112d301d7ac7c517efcc6c0",
+    "identical_to": "Xin-Rui/BudgetThinker-Training-Stage-Model@f07bbaff:TCMv4_8ratio_v1_step_421_reward_0.838-models/model.safetensors (RL checkpoint; the SFT-only checkpoint TCMv4_8ratio_FULL_1_5B_6epoch has a different hash)",
+    "published_dtype": "bfloat16",
+    "run_dtype": "bfloat16 on bf16-capable GPUs (A100, compute capability >= 8.0); float16 on T4",
+    "run_dtype_reason": "bfloat16 is the published dtype; NVIDIA T4 (sm_75) has no native bfloat16, so the 10-question T4 run used float16"
+  },
+  "official_code": {
+    "repo": "https://github.com/MobileLLM/BudgetThinker",
+    "commit": "481da9045f761ba34899271db846d659110b7065",
+    "injection_rule": "to_replace/vllm/worker/model_runner.py, remaining='8ratio' (vLLM 0.7.3 patch)",
+    "prompt": "evaluation/eval_tools.py::_8ratio_prompt with PROMPT_TEMPLATES['deepseek3']",
+    "grader": "evaluation/parser.py::run_execute + evaluation/grader.py::math_equal (Qwen2.5-Math)"
+  },
+  "dataset": {
+    "id": "HuggingFaceH4/MATH-500",
+    "revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+    "file": "test.jsonl",
+    "note": "Identical problems/answers to the repo's evaluation/data/math500 (repo adds the 'Return your final response within \\boxed{}. ' prefix, which official_prompt adds too)"
+  },
+  "selection": {"n_questions": 100, "seed": 20251011, "stratify_by": "level", "per_level": 20},
+  "budgets": [500, 1000, 2000, 4000, 6000, 10000],
+  "conditions": {
+    "A": "No external control tokens (official remaining=default); model may emit control tokens itself",
+    "B": "Official BudgetThinker injection, K=8: delta=B//8+1, 7/8..1/8 overwrite the sampled token"
+  },
+  "prompt_identical_across_conditions": true,
+  "sampling": {"temperature": 0.6, "top_p": 0.95, "n_samples": 8,
+               "note": "Extended setting requested by the study. The official sampling script passes top_p=0.95 but process_chunk hard-codes top_p=0.9."},
+  "greedy_reference": {"temperature": 0.0, "top_p": 1.0, "n_samples": 1, "note": "Paper's MATH-500 setting"},
+  "seeds": "seed = sha256(run|q_uid|budget|sample_idx)[:63 bits]; shared by A and B (common random numbers); one CPU torch.Generator per generation",
+  "termination": {
+    "reasoning_cap": "B + B//50 generated tokens before </think> (official stage-1 max_tokens)",
+    "natural_within_budget": "model emits </think> with reasoning_tokens <= B",
+    "natural_over_budget": "model emits </think> with B < reasoning_tokens <= B + B//50",
+    "forced": "cap reached without </think>: append official suffix, then <= 50 answer tokens",
+    "forced_suffix": "\n</think>\n\n**Final Answer**\\boxed",
+    "forced_answer_cap": 50,
+    "natural_answer_cap": 512,
+    "eos_in_think": "model emits EOS before </think> (incomplete)",
+    "same_policy_for_A_and_B": true
+  },
+  "token_counting": {
+    "reasoning_tokens": "all generated tokens before </think>: <think>, text, injected and self-generated control tokens",
+    "also_logged": ["reasoning_tokens_excl_ctrl", "reasoning_tokens_excl_injected", "ctrl_injected_*", "ctrl_self_*", "suffix_tokens", "answer_tokens", "generated_total"]
+  },
+  "pilot": {"n_questions": 5, "pick": "first selected question of each level", "budgets": [500, 2000], "n_samples": 2, "conditions": ["A", "B"]},
+  "rq1_probe": {"n_questions": 5, "budgets": [500, 2000], "decoding": "greedy", "conditions": ["A", "B"]},
+  "rows_per_batch": {"500": 32, "1000": 32, "2000": 32, "4000": 16, "6000": 16, "10000": 16, "default": 16},
+  "rows_per_batch_a100": {"500": 256, "1000": 256, "2000": 192, "4000": 128, "6000": 96, "10000": 64, "default": 64},
+  "colab": {"gpu": "T4 (pilot, 10-question run); A100 (full 100-question run, approved by the user 2026-10-11)",
+            "cu_per_hour_assumed": 1.76, "cu_rate_note": "verify in Colab > Resources; the estimate cell takes the rate as a parameter"}
+}

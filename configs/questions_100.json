@@ -1,0 +1,723 @@
+{
+ "dataset": {
+  "id": "HuggingFaceH4/MATH-500",
+  "revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+  "file": "test.jsonl",
+  "note": "Identical problems/answers to the repo's evaluation/data/math500 (repo adds the 'Return your final response within \\boxed{}. ' prefix, which official_prompt adds too)"
+ },
+ "selection": {
+  "n_questions": 100,
+  "seed": 20251011,
+  "stratify_by": "level",
+  "per_level": 20
+ },
+ "questions": [
+  {
+   "order": 0,
+   "unique_id": "test/intermediate_algebra/2022.json",
+   "level": 5,
+   "subject": "Intermediate Algebra",
+   "answer": "64"
+  },
+  {
+   "order": 1,
+   "unique_id": "test/intermediate_algebra/362.json",
+   "level": 4,
+   "subject": "Intermediate Algebra",
+   "answer": "40"
+  },
+  {
+   "order": 2,
+   "unique_id": "test/algebra/114.json",
+   "level": 1,
+   "subject": "Algebra",
+   "answer": "4"
+  },
+  {
+   "order": 3,
+   "unique_id": "test/intermediate_algebra/345.json",
+   "level": 4,
+   "subject": "Intermediate Algebra",
+   "answer": "504"
+  },
+  {
+   "order": 4,
+   "unique_id": "test/prealgebra/1298.json",
+   "level": 2,
+   "subject": "Prealgebra",
+   "answer": "15x - 80"
+  },
+  {
+   "order": 5,
+   "unique_id": "test/algebra/2214.json",
+   "level": 2,
+   "subject": "Algebra",
+   "answer": "4"
+  },
+  {
+   "order": 6,
+   "unique_id": "test/counting_and_probability/282.json",
+   "level": 4,
+   "subject": "Counting & Probability",
+   "answer": "\\frac{1}{2}"
+  },
+  {
+   "order": 7,
+   "unique_id": "test/prealgebra/505.json",
+   "level": 2,
+   "subject": "Prealgebra",
+   "answer": "6"
+  },
+  {
+   "order": 8,
+   "unique_id": "test/intermediate_algebra/90.json",
+   "level": 4,
+   "subject": "Intermediate Algebra",
+   "answer": "898"
+  },
+  {
+   "order": 9,
+   "unique_id": "test/algebra/346.json",
+   "level": 2,
+   "subject": "Algebra",
+   "answer": "7"
+  },
+  {
+   "order": 10,
+   "unique_id": "test/precalculus/1199.json",
+   "level": 4,
+   "subject": "Precalculus",
+   "answer": "\\pi"
+  },
+  {
+   "order": 11,
+   "unique_id": "test/counting_and_probability/508.json",
+   "level": 3,
+   "subject": "Counting & Probability",
+   "answer": "10,\\!080"
+  },
+  {
+   "order": 12,
+   "unique_id": "test/algebra/849.json",
+   "level": 1,
+   "subject": "Algebra",
+   "answer": "18"
+  },
+  {
+   "order": 13,
+   "unique_id": "test/algebra/567.json",
+   "level": 1,
+   "subject": "Algebra",
+   "answer": "1"
+  },
+  {
+   "order": 14,
+   "unique_id": "test/geometry/65.json",
+   "level": 3,
+   "subject": "Geometry",
+   "answer": "30^\\circ"
+  },
+  {
+   "order": 15,
+   "unique_id": "test/algebra/1282.json",
+   "level": 5,
+   "subject": "Algebra",
+   "answer": "11"
+  },
+  {
+   "order": 16,
+   "unique_id": "test/algebra/1553.json",
+   "level": 3,
+   "subject": "Algebra",
+   "answer": "3"
+  },
+  {
+   "order": 17,
+   "unique_id": "test/intermediate_algebra/1123.json",
+   "level": 3,
+   "subject": "Intermediate Algebra",
+   "answer": "\\frac{10}{11}"
+  },
+  {
+   "order": 18,
+   "unique_id": "test/intermediate_algebra/102.json",
+   "level": 4,
+   "subject": "Intermediate Algebra",
+   "answer": "2"
+  },
+  {
+   "order": 19,
+   "unique_id": "test/intermediate_algebra/1992.json",
+   "level": 4,
+   "subject": "Intermediate Algebra",
+   "answer": "(0,9) \\cup (9,36)"
+  },
+  {
+   "order": 20,
+   "unique_id": "test/counting_and_probability/71.json",
+   "level": 3,
+   "subject": "Counting & Probability",
+   "answer": "3"
+  },
+  {
+   "order": 21,
+   "unique_id": "test/precalculus/779.json",
+   "level": 2,
+   "subject": "Precalculus",
+   "answer": "-2 + 7i"
+  },
+  {
+   "order": 22,
+   "unique_id": "test/geometry/880.json",
+   "level": 5,
+   "subject": "Geometry",
+   "answer": "2\\sqrt{113}"
+  },
+  {
+   "order": 23,
+   "unique_id": "test/geometry/73.json",
+   "level": 2,
+   "subject": "Geometry",
+   "answer": "4"
+  },
+  {
+   "order": 24,
+   "unique_id": "test/intermediate_algebra/134.json",
+   "level": 1,
+   "subject": "Intermediate Algebra",
+   "answer": "-50"
+  },
+  {
+   "order": 25,
+   "unique_id": "test/counting_and_probability/761.json",
+   "level": 1,
+   "subject": "Counting & Probability",
+   "answer": "3"
+  },
+  {
+   "order": 26,
+   "unique_id": "test/precalculus/1303.json",
+   "level": 1,
+   "subject": "Precalculus",
+   "answer": "\\sqrt{51}"
+  },
+  {
+   "order": 27,
+   "unique_id": "test/intermediate_algebra/207.json",
+   "level": 4,
+   "subject": "Intermediate Algebra",
+   "answer": "-1"
+  },
+  {
+   "order": 28,
+   "unique_id": "test/prealgebra/1139.json",
+   "level": 5,
+   "subject": "Prealgebra",
+   "answer": "4"
+  },
+  {
+   "order": 29,
+   "unique_id": "test/algebra/2058.json",
+   "level": 4,
+   "subject": "Algebra",
+   "answer": "13"
+  },
+  {
+   "order": 30,
+   "unique_id": "test/intermediate_algebra/1410.json",
+   "level": 2,
+   "subject": "Intermediate Algebra",
+   "answer": "\\frac65"
+  },
+  {
+   "order": 31,
+   "unique_id": "test/intermediate_algebra/956.json",
+   "level": 5,
+   "subject": "Intermediate Algebra",
+   "answer": "(6,31,-1)"
+  },
+  {
+   "order": 32,
+   "unique_id": "test/algebra/686.json",
+   "level": 5,
+   "subject": "Algebra",
+   "answer": "4"
+  },
+  {
+   "order": 33,
+   "unique_id": "test/intermediate_algebra/1014.json",
+   "level": 3,
+   "subject": "Intermediate Algebra",
+   "answer": "50"
+  },
+  {
+   "order": 34,
+   "unique_id": "test/number_theory/1172.json",
+   "level": 4,
+   "subject": "Number Theory",
+   "answer": "103"
+  },
+  {
+   "order": 35,
+   "unique_id": "test/intermediate_algebra/834.json",
+   "level": 3,
+   "subject": "Intermediate Algebra",
+   "answer": "9"
+  },
+  {
+   "order": 36,
+   "unique_id": "test/number_theory/342.json",
+   "level": 1,
+   "subject": "Number Theory",
+   "answer": "0"
+  },
+  {
+   "order": 37,
+   "unique_id": "test/intermediate_algebra/1232.json",
+   "level": 3,
+   "subject": "Intermediate Algebra",
+   "answer": "\\frac{5}{13}"
+  },
+  {
+   "order": 38,
+   "unique_id": "test/number_theory/515.json",
+   "level": 3,
+   "subject": "Number Theory",
+   "answer": "27"
+  },
+  {
+   "order": 39,
+   "unique_id": "test/algebra/668.json",
+   "level": 4,
+   "subject": "Algebra",
+   "answer": "45"
+  },
+  {
+   "order": 40,
+   "unique_id": "test/intermediate_algebra/860.json",
+   "level": 2,
+   "subject": "Intermediate Algebra",
+   "answer": "\\text{ellipse}"
+  },
+  {
+   "order": 41,
+   "unique_id": "test/counting_and_probability/389.json",
+   "level": 2,
+   "subject": "Counting & Probability",
+   "answer": "28"
+  },
+  {
+   "order": 42,
+   "unique_id": "test/geometry/106.json",
+   "level": 2,
+   "subject": "Geometry",
+   "answer": "31"
+  },
+  {
+   "order": 43,
+   "unique_id": "test/algebra/661.json",
+   "level": 3,
+   "subject": "Algebra",
+   "answer": "36"
+  },
+  {
+   "order": 44,
+   "unique_id": "test/intermediate_algebra/1714.json",
+   "level": 1,
+   "subject": "Intermediate Algebra",
+   "answer": "(5,\\infty)"
+  },
+  {
+   "order": 45,
+   "unique_id": "test/intermediate_algebra/1849.json",
+   "level": 5,
+   "subject": "Intermediate Algebra",
+   "answer": "501"
+  },
+  {
+   "order": 46,
+   "unique_id": "test/number_theory/1065.json",
+   "level": 4,
+   "subject": "Number Theory",
+   "answer": "17"
+  },
+  {
+   "order": 47,
+   "unique_id": "test/intermediate_algebra/1544.json",
+   "level": 5,
+   "subject": "Intermediate Algebra",
+   "answer": "6"
+  },
+  {
+   "order": 48,
+   "unique_id": "test/algebra/1937.json",
+   "level": 1,
+   "subject": "Algebra",
+   "answer": "1600"
+  },
+  {
+   "order": 49,
+   "unique_id": "test/geometry/456.json",
+   "level": 2,
+   "subject": "Geometry",
+   "answer": "3"
+  },
+  {
+   "order": 50,
+   "unique_id": "test/geometry/172.json",
+   "level": 5,
+   "subject": "Geometry",
+   "answer": "8"
+  },
+  {
+   "order": 51,
+   "unique_id": "test/intermediate_algebra/1102.json",
+   "level": 1,
+   "subject": "Intermediate Algebra",
+   "answer": "-2,1"
+  },
+  {
+   "order": 52,
+   "unique_id": "test/number_theory/631.json",
+   "level": 5,
+   "subject": "Number Theory",
+   "answer": "36"
+  },
+  {
+   "order": 53,
+   "unique_id": "test/intermediate_algebra/1981.json",
+   "level": 4,
+   "subject": "Intermediate Algebra",
+   "answer": "(2,12) \\cup (12,102)"
+  },
+  {
+   "order": 54,
+   "unique_id": "test/geometry/434.json",
+   "level": 1,
+   "subject": "Geometry",
+   "answer": "28"
+  },
+  {
+   "order": 55,
+   "unique_id": "test/prealgebra/572.json",
+   "level": 2,
+   "subject": "Prealgebra",
+   "answer": "0.15"
+  },
+  {
+   "order": 56,
+   "unique_id": "test/prealgebra/1730.json",
+   "level": 3,
+   "subject": "Prealgebra",
+   "answer": "6"
+  },
+  {
+   "order": 57,
+   "unique_id": "test/prealgebra/1840.json",
+   "level": 2,
+   "subject": "Prealgebra",
+   "answer": "78"
+  },
+  {
+   "order": 58,
+   "unique_id": "test/precalculus/681.json",
+   "level": 3,
+   "subject": "Precalculus",
+   "answer": "\\frac{1}{8}"
+  },
+  {
+   "order": 59,
+   "unique_id": "test/algebra/722.json",
+   "level": 1,
+   "subject": "Algebra",
+   "answer": "9901"
+  },
+  {
+   "order": 60,
+   "unique_id": "test/intermediate_algebra/337.json",
+   "level": 1,
+   "subject": "Intermediate Algebra",
+   "answer": "22"
+  },
+  {
+   "order": 61,
+   "unique_id": "test/intermediate_algebra/2046.json",
+   "level": 2,
+   "subject": "Intermediate Algebra",
+   "answer": "2"
+  },
+  {
+   "order": 62,
+   "unique_id": "test/precalculus/323.json",
+   "level": 5,
+   "subject": "Precalculus",
+   "answer": "y = 2x + 3"
+  },
+  {
+   "order": 63,
+   "unique_id": "test/number_theory/1128.json",
+   "level": 5,
+   "subject": "Number Theory",
+   "answer": "2"
+  },
+  {
+   "order": 64,
+   "unique_id": "test/precalculus/285.json",
+   "level": 2,
+   "subject": "Precalculus",
+   "answer": "6"
+  },
+  {
+   "order": 65,
+   "unique_id": "test/algebra/2743.json",
+   "level": 2,
+   "subject": "Algebra",
+   "answer": "29"
+  },
+  {
+   "order": 66,
+   "unique_id": "test/algebra/1349.json",
+   "level": 2,
+   "subject": "Algebra",
+   "answer": "\\text{Evelyn}"
+  },
+  {
+   "order": 67,
+   "unique_id": "test/prealgebra/1512.json",
+   "level": 5,
+   "subject": "Prealgebra",
+   "answer": "7\\pi"
+  },
+  {
+   "order": 68,
+   "unique_id": "test/prealgebra/1908.json",
+   "level": 3,
+   "subject": "Prealgebra",
+   "answer": "3"
+  },
+  {
+   "order": 69,
+   "unique_id": "test/algebra/1338.json",
+   "level": 4,
+   "subject": "Algebra",
+   "answer": "66"
+  },
+  {
+   "order": 70,
+   "unique_id": "test/algebra/841.json",
+   "level": 1,
+   "subject": "Algebra",
+   "answer": "350"
+  },
+  {
+   "order": 71,
+   "unique_id": "test/intermediate_algebra/662.json",
+   "level": 5,
+   "subject": "Intermediate Algebra",
+   "answer": "1 \\pm \\sqrt{19}"
+  },
+  {
+   "order": 72,
+   "unique_id": "test/intermediate_algebra/1151.json",
+   "level": 3,
+   "subject": "Intermediate Algebra",
+   "answer": "1"
+  },
+  {
+   "order": 73,
+   "unique_id": "test/algebra/2470.json",
+   "level": 1,
+   "subject": "Algebra",
+   "answer": "137 \\frac{1}{2}"
+  },
+  {
+   "order": 74,
+   "unique_id": "test/prealgebra/1973.json",
+   "level": 4,
+   "subject": "Prealgebra",
+   "answer": "4"
+  },
+  {
+   "order": 75,
+   "unique_id": "test/algebra/1199.json",
+   "level": 4,
+   "subject": "Algebra",
+   "answer": "1"
+  },
+  {
+   "order": 76,
+   "unique_id": "test/number_theory/410.json",
+   "level": 2,
+   "subject": "Number Theory",
+   "answer": ".35625"
+  },
+  {
+   "order": 77,
+   "unique_id": "test/precalculus/43.json",
+   "level": 1,
+   "subject": "Precalculus",
+   "answer": "(15,-29)"
+  },
+  {
+   "order": 78,
+   "unique_id": "test/prealgebra/105.json",
+   "level": 1,
+   "subject": "Prealgebra",
+   "answer": "\\text{east}"
+  },
+  {
+   "order": 79,
+   "unique_id": "test/precalculus/801.json",
+   "level": 3,
+   "subject": "Precalculus",
+   "answer": "55^\\circ"
+  },
+  {
+   "order": 80,
+   "unique_id": "test/intermediate_algebra/1166.json",
+   "level": 5,
+   "subject": "Intermediate Algebra",
+   "answer": "100"
+  },
+  {
+   "order": 81,
+   "unique_id": "test/algebra/1072.json",
+   "level": 4,
+   "subject": "Algebra",
+   "answer": "\\frac{243}{625}"
+  },
+  {
+   "order": 82,
+   "unique_id": "test/intermediate_algebra/1898.json",
+   "level": 3,
+   "subject": "Intermediate Algebra",
+   "answer": "-5"
+  },
+  {
+   "order": 83,
+   "unique_id": "test/algebra/2486.json",
+   "level": 5,
+   "subject": "Algebra",
+   "answer": "\\left(\\frac{3}{5},\\frac{8}{3}\\right]"
+  },
+  {
+   "order": 84,
+   "unique_id": "test/intermediate_algebra/199.json",
+   "level": 3,
+   "subject": "Intermediate Algebra",
+   "answer": "x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + x^2 + x + 1"
+  },
+  {
+   "order": 85,
+   "unique_id": "test/counting_and_probability/666.json",
+   "level": 2,
+   "subject": "Counting & Probability",
+   "answer": "225"
+  },
+  {
+   "order": 86,
+   "unique_id": "test/algebra/2517.json",
+   "level": 5,
+   "subject": "Algebra",
+   "answer": "-\\frac{35}{9}"
+  },
+  {
+   "order": 87,
+   "unique_id": "test/prealgebra/1356.json",
+   "level": 4,
+   "subject": "Prealgebra",
+   "answer": "\\frac{4}{9}"
+  },
+  {
+   "order": 88,
+   "unique_id": "test/prealgebra/192.json",
+   "level": 1,
+   "subject": "Prealgebra",
+   "answer": "2"
+  },
+  {
+   "order": 89,
+   "unique_id": "test/algebra/478.json",
+   "level": 1,
+   "subject": "Algebra",
+   "answer": "65"
+  },
+  {
+   "order": 90,
+   "unique_id": "test/precalculus/659.json",
+   "level": 4,
+   "subject": "Precalculus",
+   "answer": "5x - 7y + 11z + 4 = 0"
+  },
+  {
+   "order": 91,
+   "unique_id": "test/counting_and_probability/238.json",
+   "level": 4,
+   "subject": "Counting & Probability",
+   "answer": "10080"
+  },
+  {
+   "order": 92,
+   "unique_id": "test/algebra/24.json",
+   "level": 1,
+   "subject": "Algebra",
+   "answer": "2000"
+  },
+  {
+   "order": 93,
+   "unique_id": "test/algebra/2036.json",
+   "level": 3,
+   "subject": "Algebra",
+   "answer": "3\\sqrt{13}"
+  },
+  {
+   "order": 94,
+   "unique_id": "test/counting_and_probability/1003.json",
+   "level": 5,
+   "subject": "Counting & Probability",
+   "answer": "29"
+  },
+  {
+   "order": 95,
+   "unique_id": "test/number_theory/22.json",
+   "level": 3,
+   "subject": "Number Theory",
+   "answer": "2"
+  },
+  {
+   "order": 96,
+   "unique_id": "test/geometry/477.json",
+   "level": 3,
+   "subject": "Geometry",
+   "answer": "216"
+  },
+  {
+   "order": 97,
+   "unique_id": "test/precalculus/398.json",
+   "level": 5,
+   "subject": "Precalculus",
+   "answer": "\\begin{pmatrix} 1/5 \\\\ -18/5 \\end{pmatrix}"
+  },
+  {
+   "order": 98,
+   "unique_id": "test/algebra/524.json",
+   "level": 2,
+   "subject": "Algebra",
+   "answer": "4005"
+  },
+  {
+   "order": 99,
+   "unique_id": "test/intermediate_algebra/279.json",
+   "level": 5,
+   "subject": "Intermediate Algebra",
+   "answer": "10"
+  }
+ ],
+ "pilot_unique_ids": [
+  "test/algebra/114.json",
+  "test/prealgebra/1298.json",
+  "test/counting_and_probability/508.json",
+  "test/intermediate_algebra/362.json",
+  "test/intermediate_algebra/2022.json"
+ ]
+}
