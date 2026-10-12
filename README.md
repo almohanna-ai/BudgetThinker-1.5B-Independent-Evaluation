@@ -13,8 +13,9 @@ BudgetThinker controls chain-of-thought length by periodically inserting control
 fraction of a token budget. We test whether the model tracks its budget on its own (condition **A**, no external
 control tokens) or depends on the external injection (condition **B**, official injection rule, K = 8).
 
-- Technical report, raw generations and analysis outputs (Zenodo):
-  [10.5281/zenodo.23318433](https://doi.org/10.5281/zenodo.23318433)
+- Technical report (Zenodo): [10.5281/zenodo.23318433](https://doi.org/10.5281/zenodo.23318433)
+- Generations, analysis outputs and original packages (Hugging Face):
+  [almohanna-ai/BudgetThinker-1.5B-Independent-Evaluation](https://huggingface.co/datasets/almohanna-ai/BudgetThinker-1.5B-Independent-Evaluation)
 
 ## Research questions
 
